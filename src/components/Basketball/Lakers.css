@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image {
+  background-color: rgb(132, 0, 255);
+  padding: 5px;
+  height: 320px;
+  width: 350px;
+  margin-right: 20px; 
+}
+
+.text {
+  position: relative; /* Add relative positioning to the text container */
+}
+
+.text aside.body {
+  font-size: 25px;
+  display: none; /* Hide the body text by default */
+ 
+}
+
+.text p.hs {
+  font-size: 20px;
+  color: white;
+  background-color: rgb(132, 0, 255);
+  font-weight: bold;
+  padding: 25px;
+  cursor: pointer; /* Add cursor pointer for hover effect */
+}
+
+.text p.hs:hover + aside.body {
+  display: block; /* Show the body text on hover */
+}

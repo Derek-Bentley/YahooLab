@@ -9,20 +9,27 @@ import Home from "./Home";
 import Sports from "./Sports";
 import Trending from "./Trending";
 import Mail from "./Mail";
-import emoji from './emoji.svg';
+import emoji from './yahoo-mail.png';
 
 class Main extends Component {
   render() {
     return (
       <HashRouter>
         <div>
-          <h1>Yahoo</h1>
-          <div className="logo">
-           <img alt="yahoo logo" src={emoji} />
-          </div>
+        <div className="logo-container">
+            <img
+                src="https://s.yimg.com/ny/api/res/1.2/vlvd6fw1UHI9T_3GaNPzDw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD02OTI-/https://s.yimg.com/os/creatr-uploaded-images/2019-09/a929b8f0-dd65-11e9-bffe-b90463fd5188"
+                alt="Yahoo Logo"
+                className="yahoo-logo"
+            />
+        </div>
 
+          <div className="search-bar">
+            <input type="text" placeholder="Search..." />
+            <button>Search</button>
+          </div>
           <ul className="header">
-            <li><NavLink exact to="/">News</NavLink></li>
+            <li><NavLink exact to="/">Home</NavLink></li>
             <li><NavLink to="/sports">Sports</NavLink></li>
             <li><NavLink to="/trending">Trending</NavLink></li>
             <li><NavLink to="/mail">Mail</NavLink></li>
